@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
-<html>
+<html Lang= "en">
   <head>
     <!-- Pull the engine from the Quintus CDN or load it locally -->
     <!-- (use quintus-all.min.js for production) -->
     <script src='http://cdn.html5quintus.com/v0.2.0/quintus-all.js'></script>
   </head>
 <body>          
-           
+           <div id="quintus_container" style="width: 960px; margin: 0px auto; position: relative;">
+   <canvas width="960" height="512" id="quintus" style="height: 512px; width: 960px; position: relative;"></canvas>
+  </div>
 <script>
 var Q = Quintus()
         .include("Sprites, Scenes, Input, 2D, Touch, UI")
