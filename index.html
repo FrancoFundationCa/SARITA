@@ -1,6 +1,4 @@
 
- run in multiple instances on a page.
-
 <html>
   <head>
     <!-- Pull the engine from the Quintus CDN or load it locally -->
@@ -9,7 +7,7 @@
   </head>
 <body>          
            
-
+<Script>
 var Q = Quintus()
         .include("Sprites, Scenes, Input, 2D, Touch, UI")
         .setup({ maximize: true })
@@ -89,6 +87,6 @@ Q.load("sprites.png, sprites.json, level.json, tiles.png", function() {
   Q.compileSheets("sprites.png","sprites.json");
   Q.stageScene("level1");
 });
-      // Add a 
+     </Script>
    </body>
 </html>
