@@ -1,20 +1,12 @@
 
 <html>
-  <head>
-    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-    <script>      
-      function init() {
-        var stage = new createjs.Stage("demoCanvas");
-        var circle = new createjs.Shape();
-        circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 50);
-        circle.x = 100;
-        circle.y = 100;
-        stage.addChild(circle);
-        stage.update();
-      }
+  <head></head>
+  <body>
+    <div id="game"></div>
+    <script type="text/javascript" src="https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"></script>
+    <script>
+      Crafty.init(500,350, document.getElementById('game'));
+      Crafty.e('2D, DOM, Color').attr({x: 0, y: 0, w: 100, h: 100}).color('#F00');
     </script>
-  </head>
-  <body onload="init();">
-    <canvas id="demoCanvas" width="500" height="200"></canvas>
   </body>
 </html>
