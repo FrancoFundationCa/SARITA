@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+Yo<!DOCTYPE html>
 
 <html lang="ES" xml:lang="ES" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -271,6 +271,27 @@ function googleTranslateElementInit() {
 	
 
 	
+<div id="locipay-button"></div>
+<div id="locipay-popup"></div>
+<script src="https://getloci.com/locipay/locipay.js"></script>
+<script>
+    function onSuccess() {
+        document.querySelector('#locipay-button').innerText="SUCCESS"
+    }
+    function onError() {
+        document.querySelector('#locipay-button').innerText="ERROR"
+    }
+    LociPay.Button({
+        env: 'https://getloci.com',
+        recipient: 'YONATHANF2',
+        tag: 'locipay1',
+        accept: 'LVES',
+        amount: '25.00',
+        onSuccess: onSuccess,
+        onError: onError,
+        loginContainer: '#locipay-popup'
+    }).render('#locipay-button');
+</script>
 
 	
 
